@@ -1,0 +1,42 @@
+num_classes:  41444
+num_classes:  50
+num_classes:  50
+W0221 17:20:40.142127 31719 device_context.cc:404] Please NOTE: device: 2, GPU Compute Capability: 3.5, Driver API Version: 10.2, Runtime API Version: 10.2
+W0221 17:20:40.147296 31719 device_context.cc:422] device: 2, cuDNN Version: 7.6.
+I0221 17:20:42.584864 31719 gen_comm_id_helper.cc:181] Server listening on: 127.0.0.1:34853 successful.
+I0221 17:20:42.719781 31719 nccl_context.cc:74] init nccl context nranks: 3 local rank: 1 gpu id: 2 ring id: 0
+Traceback (most recent call last):
+  File "tools/train.py", line 32, in <module>
+    engine.train()
+  File "/home/vis/jiangminyue/carreid-dynamic/ppcls/engine/engine.py", line 265, in train
+    self.train_epoch_func(self, epoch_id, print_batch_step)
+  File "/home/vis/jiangminyue/carreid-dynamic/ppcls/engine/train/train.py", line 68, in train_epoch
+    update_loss(engine, loss_dict, batch_size)
+  File "/home/vis/jiangminyue/carreid-dynamic/ppcls/engine/train/utils.py", line 37, in update_loss
+    trainer.output_info[key].update(loss_dict[key].numpy()[0], batch_size)
+KeyboardInterrupt
+num_classes:  41444
+num_classes:  50
+num_classes:  50
+W0221 17:41:41.775594 16981 device_context.cc:404] Please NOTE: device: 2, GPU Compute Capability: 3.5, Driver API Version: 10.2, Runtime API Version: 10.2
+W0221 17:41:41.781061 16981 device_context.cc:422] device: 2, cuDNN Version: 7.6.
+I0221 17:41:44.317895 16981 gen_comm_id_helper.cc:181] Server listening on: 127.0.0.1:17859 successful.
+I0221 17:41:44.750239 16981 nccl_context.cc:74] init nccl context nranks: 3 local rank: 1 gpu id: 2 ring id: 0
+Traceback (most recent call last):
+  File "tools/train.py", line 31, in <module>
+    engine = Engine(config, mode="train")
+  File "/home/vis/jiangminyue/carreid-dynamic/ppcls/engine/engine.py", line 216, in __init__
+    dist.init_parallel_env()
+  File "/home/vis/jiangminyue/dependency_pd21/anaconda3/lib/python3.7/site-packages/paddle/distributed/parallel.py", line 196, in init_parallel_env
+    parallel_helper._init_parallel_ctx()
+  File "/home/vis/jiangminyue/dependency_pd21/anaconda3/lib/python3.7/site-packages/paddle/fluid/dygraph/parallel_helper.py", line 42, in _init_parallel_ctx
+    __parallel_ctx__clz__.init()
+OSError: (External)  Nccl error, unhandled system error  (at /paddle/paddle/fluid/platform/collective_helper.cc:100)
+
+num_classes:  41444
+num_classes:  50
+num_classes:  50
+W0221 17:44:11.956717 20708 device_context.cc:404] Please NOTE: device: 2, GPU Compute Capability: 3.5, Driver API Version: 10.2, Runtime API Version: 10.2
+W0221 17:44:11.963435 20708 device_context.cc:422] device: 2, cuDNN Version: 7.6.
+I0221 17:44:14.414224 20708 gen_comm_id_helper.cc:181] Server listening on: 127.0.0.1:10006 successful.
+I0221 17:44:14.758520 20708 nccl_context.cc:74] init nccl context nranks: 3 local rank: 1 gpu id: 2 ring id: 0

@@ -1,0 +1,49 @@
+num_classes:  41444
+num_classes:  50
+num_classes:  50
+W0221 17:20:40.134390 31722 device_context.cc:404] Please NOTE: device: 3, GPU Compute Capability: 3.5, Driver API Version: 10.2, Runtime API Version: 10.2
+W0221 17:20:40.140265 31722 device_context.cc:422] device: 3, cuDNN Version: 7.6.
+I0221 17:20:42.600394 31722 gen_comm_id_helper.cc:181] Server listening on: 127.0.0.1:21839 successful.
+I0221 17:20:42.719764 31722 nccl_context.cc:74] init nccl context nranks: 3 local rank: 2 gpu id: 3 ring id: 0
+Traceback (most recent call last):
+  File "tools/train.py", line 32, in <module>
+    engine.train()
+  File "/home/vis/jiangminyue/carreid-dynamic/ppcls/engine/engine.py", line 265, in train
+    self.train_epoch_func(self, epoch_id, print_batch_step)
+  File "/home/vis/jiangminyue/carreid-dynamic/ppcls/engine/train/train.py", line 68, in train_epoch
+    update_loss(engine, loss_dict, batch_size)
+  File "/home/vis/jiangminyue/carreid-dynamic/ppcls/engine/train/utils.py", line 37, in update_loss
+    trainer.output_info[key].update(loss_dict[key].numpy()[0], batch_size)
+KeyboardInterrupt
+num_classes:  41444
+num_classes:  50
+num_classes:  50
+W0221 17:41:41.773907 16984 device_context.cc:404] Please NOTE: device: 3, GPU Compute Capability: 3.5, Driver API Version: 10.2, Runtime API Version: 10.2
+W0221 17:41:41.780740 16984 device_context.cc:422] device: 3, cuDNN Version: 7.6.
+I0221 17:41:44.257009 16984 gen_comm_id_helper.cc:181] Server listening on: 127.0.0.1:22925 successful.
+I0221 17:41:44.750226 16984 nccl_context.cc:74] init nccl context nranks: 3 local rank: 2 gpu id: 3 ring id: 0
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+0   paddle::imperative::NCCLParallelContext::Init()
+1   paddle::platform::NCCLCommContext::CreateNCCLComm(ncclUniqueId*, int, int, int, int)
+2   ncclCommInitRank
+3   paddle::framework::SignalHandle(char const*, int)
+4   paddle::platform::GetCurrentTraceBackString[abi:cxx11]()
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Termination signal` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1645436507 (unix time) try "date -d @1645436507" if you are using GNU date ***]
+  [SignalInfo: *** SIGTERM (@0x1fc000040a2) received by PID 16984 (TID 0x7fa2957ee700) from PID 16546 ***]
+
+num_classes:  41444
+num_classes:  50
+num_classes:  50
+W0221 17:44:11.674288 20711 device_context.cc:404] Please NOTE: device: 3, GPU Compute Capability: 3.5, Driver API Version: 10.2, Runtime API Version: 10.2
+W0221 17:44:11.680027 20711 device_context.cc:422] device: 3, cuDNN Version: 7.6.
+I0221 17:44:14.085106 20711 gen_comm_id_helper.cc:181] Server listening on: 127.0.0.1:22863 successful.
+I0221 17:44:14.758517 20711 nccl_context.cc:74] init nccl context nranks: 3 local rank: 2 gpu id: 3 ring id: 0
