@@ -37,7 +37,7 @@ This project is implemented with Python3.6+, [Paddle](https://github.com/PaddleP
   ├── c045
   ├── c046
   ```
-  - Please download the **detection results** and **ReID features** from [this link](https://pan.baidu.com/s/1Qc5rE6OkMaW8vHg-SDdBew ) (The password is ``0vcw``) and extract it under ``SCMT/dataspace/AICITY_test/``.
+  - Please download the **detection results** and **ReID features** from [this link](https://pan.baidu.com/s/1RVY7segBCR3TingcC1UIfA ) (The password is ``56q2``) and extract it under ``SCMT/dataspace/AICITY_test/``.
    ```
   SCMT/dataspace/AICITY_test/
   ├── aic22_1_test_infer_v2_Convnext.pkl
@@ -49,7 +49,7 @@ This project is implemented with Python3.6+, [Paddle](https://github.com/PaddleP
   ```
   
 - Matching
-  - Please download the **tracking results**, **ReID features** , and **truncation rates** from [this link](https://pan.baidu.com/s/1-bLBfKvlmqWo30otiDCXlA) (The password is ``904s``) and extract it under ``ICA/data/``. All files are listed below.
+  - Please download the **tracking results**, **ReID features** , and **truncation rates** from [this link](https://pan.baidu.com/s/1Qc5rE6OkMaW8vHg-SDdBew  ) (The password is ``0vcw``) and extract it under ``ICA/data/``. All files are listed below.
   ```
   ICA/data/scmt/
   ├── c04*.pkl # ReID features. * indicates 1 to 6
