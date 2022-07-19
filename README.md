@@ -61,7 +61,7 @@ This project is implemented with Python3.6+, [Paddle](https://github.com/PaddleP
 ## Run our system
 
 - Detection
-  1. **Generate train/val images:** Run ``python vid2img_recursive_std.py`` in the **DET/Swin-Transformer-Object-Detection/data/track1** folder to generate train/val images for detection.
+  1. **Generate train/val images:** Run ``python vid2img_recursive_std.py`` in the **TOOLS** folder to generate train/val images for detection.
   2. **Train detection model:** You should first install torch==1.9 in your environment and use our **config** files provided in the **Data Preparation** as the detection configs, then run ``train.sh`` in the **DET/Swin-Transformer-Object-Detection/** folder to train the detection model.
   3. **Test detection model:** Run ``test.sh`` in the **DET/Swin-Transformer-Object-Detection/** folder to get the detection results of test set.
 
